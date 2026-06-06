@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Азбука гиен</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Азбука гиен">
+        <img src="assets/azbuka-gien-logo.png" alt="" />
+        <span>Азбука гиен</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="kicker">почетные гости</p>
+        <h1 id="page-title">Список почетных посетителей Азбуки на Академика Понтрягина</h1>
+        <p class="hint">Нажми на фото, чтобы посмотреть описание.</p>
+      </section>
+
+      <section class="guest-grid" aria-label="Каталог посетителей">
+        <button class="guest-card" type="button" data-guest="emirhanio">
+          <span class="photo-frame">
+            <img src="assets/emirhanio.jpg" alt="Эмирханио" />
+            <span class="click-badge">описание</span>
+          </span>
+          <span class="guest-name">Эмирханио</span>
+        </button>
+
+        <button class="guest-card" type="button" data-guest="sosedus">
+          <span class="photo-frame">
+            <img src="assets/sosedus.jpg" alt="Соседус" />
+            <span class="click-badge">описание</span>
+          </span>
+          <span class="guest-name">Соседус</span>
+        </button>
+
+        <button class="guest-card" type="button" data-guest="timosha">
+          <span class="photo-frame">
+            <img src="assets/timosha.jpg" alt="Просто Тимоша" />
+            <span class="click-badge">описание</span>
+          </span>
+          <span class="guest-name">Просто Тимоша</span>
+        </button>
+
+        <button class="guest-card" type="button" data-guest="focus">
+          <span class="photo-frame">
+            <img src="assets/danek-focus.jpg" alt="Данёк Фокус" />
+            <span class="click-badge">описание</span>
+          </span>
+          <span class="guest-name">Данёк Фокус</span>
+        </button>
+
+        <button class="guest-card" type="button" data-guest="secret">
+          <span class="photo-frame">
+            <img class="secret-photo" src="assets/secret-question.jpg" alt="Секретный парень" />
+            <span class="click-badge">описание</span>
+          </span>
+          <span class="guest-name">Секретный парень</span>
+        </button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/azbuka-gien-logo.png" alt="" />
+      <span>by гиены</span>
+    </footer>
+
+    <dialog class="guest-dialog" aria-labelledby="dialog-title">
+      <button class="close-dialog" type="button" aria-label="Закрыть">×</button>
+      <p class="dialog-kicker">почетный посетитель</p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
